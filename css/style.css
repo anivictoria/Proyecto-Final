@@ -79,6 +79,8 @@ h2 {
 .titulo-principal {
     font-family: 'Space Mono', monospace;
     color: white;
+    font-size: 1.5em;
+    padding-right: 1em;
 }
 
 
@@ -160,5 +162,18 @@ a:link {
   }
 
 .collapse {
-    background-color: #AE4F68;
+    background-color:#AE4F68;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: #625D9D;
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+}
+
+.bg-light {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
