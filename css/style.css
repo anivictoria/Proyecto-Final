@@ -53,8 +53,8 @@ img {
 .img-grid:hover {
     transition-property: opacity, left, top, height;
     transition-duration: 3s, 5s, 3s, 5s;
-  }
-     
+}
+
 
 
 /* fin de grid de las imagenes de la seccion trabajo*/
@@ -172,21 +172,21 @@ a:hover {
     border-bottom: 1px solid;
     background: #c44b61;
     color: #625D9D;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .collapse {
     background-color: #8D6285;
-    
+
 }
 
-.collapse:hover{
-  background-color:#c44b61;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
+.collapse:hover {
+    background-color: #c44b61;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .navbar-nav {
