@@ -182,12 +182,14 @@ a:hover {
 
 }
 
-.collapse:hover {
-    background-color: #c44b61;
+.collapse:hover{
+    background-color: #A73F52;
     transition-property: all;
     transition-duration: 0.5s;
-    transition-timing-function: linear;
+    transition-timing-function: linear
+
 }
+
 
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
@@ -201,3 +203,4 @@ a:hover {
     --bs-bg-opacity: 0.5;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
+
