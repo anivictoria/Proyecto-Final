@@ -50,6 +50,12 @@ img {
     width: 100%;
 }
 
+.img-grid:hover
+ {filter: opacity(.5);
+}
+     
+
+
 /* fin de grid de las imagenes de la seccion trabajo*/
 
 /*estilos del parrafo*/
@@ -57,7 +63,7 @@ img {
 p {
     font-family: 'Nanum Pen Script', cursive;
     color: white;
-    padding: 0vh 4vh;
+    padding: 0vh 3vh;
     width: 100%;
     font-size: 1.5em;
 }
@@ -110,26 +116,24 @@ h2 {
 
 /* estilos para imagenes contacto, ilustracion y decoracion(estrellas)*/
 .img-contacto {
-    width: 5%;
+    width: 10%;
 }
 
 .imagen-ilustracion {
     width: 20%;
     height: 20%;
-
-
 }
 
 .decoracion {
-    width: 10%;
-    height: 10%;
+    width: 10vh;
+    height: 12vh;
 
 }
 
 /*estilo imagen corazones*/
 .corazon {
-    width: 10%;
-    height: 10%;
+    width: 10vh;
+    height: 8vh;
 }
 
 
@@ -149,20 +153,28 @@ li {
     padding: 1vh 1vh;
 
 }
-a{
+
+a {
     text-decoration: none;
 
 }
+
 a:link {
-    color:white;
-  }
-  
-  a:visited {
     color: white;
-  }
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: #A73F52;
+    color: #625D9D;
+}
 
 .collapse {
-    background-color:#8D6285;
+    background-color: #8D6285;
 }
 
 .navbar-nav {
@@ -175,5 +187,5 @@ a:link {
 
 .bg-light {
     --bs-bg-opacity: 0.5;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
