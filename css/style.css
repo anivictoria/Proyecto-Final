@@ -55,8 +55,6 @@ img {
     transition-duration: 3s, 5s, 3s, 5s;
 }
 
-
-
 /* fin de grid de las imagenes de la seccion trabajo*/
 
 /*estilos del parrafo*/
@@ -80,6 +78,12 @@ h2 {
     color: white;
     padding: 1.5vh 4vh;
 
+}
+h2:hover{
+    color: black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
 }
 
 /*tamaño de fuente y tipo del titulo principal*/
