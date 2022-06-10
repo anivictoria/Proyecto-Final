@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final--portfolio-analia-vazquez-prueba-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anivictoria/Proyecto-Final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anivictoria/Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/anivictoria/Proyecto-Final#readme",
+  "description": ""
+}
