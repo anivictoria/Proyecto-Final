@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.img-contacto, img {
+  width: 100%;
+}
+
+.imagen-ilustracion {
+  width: 10;
+  height: 20;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,10 +51,6 @@ body {
 .div2,
 .div3,
 .div4 {
-  width: 100%;
-}
-
-img {
   width: 100%;
 }
 
@@ -115,10 +120,6 @@ h2:hover {
 }
 
 /* estilos para imagenes contacto, ilustracion y decoracion(estrellas)*/
-.img-contacto {
-  width: 10%;
-}
-
 .imagen-ilustracion {
   width: 20%;
   height: 20%;
@@ -169,18 +170,18 @@ a:hover {
   transition-timing-function: linear;
 }
 
-.collapse {
+.fondo-nav {
   background-color: #A73F52;
 }
 
-.collapse:hover {
+.fondo-nav:hover {
   background-color: #A73F52;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: linear;
 }
 
-.navbar-nav {
+.navegador {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-color: var(--bs-navbar-color);
@@ -188,7 +189,7 @@ a:hover {
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
 }
 
-.bg-light {
+.navegador {
   --bs-bg-opacity: 0.5;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }

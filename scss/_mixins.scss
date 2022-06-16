@@ -1,0 +1,9 @@
+@mixin estilo-img($width, $height) {
+    width: $width;
+    height: $height;
+    
+}
+
+.imagen-ilustracion{
+    @include estilo-img(10,20 )
+}
