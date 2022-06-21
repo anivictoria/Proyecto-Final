@@ -25,41 +25,34 @@ body {
   place-content: center;
   width: 100%;
   padding: 1vh 3vh;
+  /* fin de grid de las imagenes de la seccion trabajos*/
 }
-
-.div1 {
+.seccion-trabajos .div1 {
   grid-area: 1/1/2/2;
 }
-
-.div2 {
+.seccion-trabajos .div2 {
   grid-area: 1/2/2/3;
 }
-
-.div3 {
+.seccion-trabajos .div3 {
   grid-area: 2/1/3/2;
 }
-
-.div4 {
+.seccion-trabajos .div4 {
   grid-area: 2/2/3/3;
 }
-
-.div1,
-.div2,
-.div3,
-.div4 {
+.seccion-trabajos .div1,
+.seccion-trabajos .div2,
+.seccion-trabajos .div3,
+.seccion-trabajos .div4 {
   width: 100%;
 }
-
-img {
+.seccion-trabajos img {
   width: 100%;
 }
-
-.img-grid:hover {
+.seccion-trabajos .img-grid:hover {
   opacity: 50%;
   transition-duration: 1s, 1s, 1s, 1s;
 }
 
-/* fin de grid de las imagenes de la seccion trabajos*/
 /*estilos para los videos de youtube de la seccion trabajos*/
 .videos {
   padding: 1.5rem;
@@ -226,7 +219,7 @@ a:hover {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: nth($colores,11);
+  --bs-nav-link-hover-color: nth($colores, 11);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
 }
 
