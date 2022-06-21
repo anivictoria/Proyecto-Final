@@ -1,6 +1,5 @@
 
 @import"listas";
-@import"extends";
 @import "mixins";
 * {
     margin: 0;
@@ -12,6 +11,7 @@
 body {
     background: linear-gradient(#AE4F68, #B1475B, #A73F52, #94425D, #945B72, #A97895, #8D6285, #8A6587, #725185, #70629C, #625D9D);
 }
+
 
 /* grid de las imagenes de la seccion trabajo*/
 
@@ -51,15 +51,30 @@ body {
 }
 
 img {
-    @extend %imagenes;
+    width: 100%;
+    
 }
+
 
 .img-grid:hover {
-    transition-property: opacity, left, top, height;
-    transition-duration: 3s, 5s, 3s, 5s;
+    opacity: 50%;
+    transition-duration: 1s, 1s, 1s, 1s;
 }
 
-/* fin de grid de las imagenes de la seccion trabajo*/
+/* fin de grid de las imagenes de la seccion trabajos*/
+
+/*estilos para los videos de youtube de la seccion trabajos*/
+.videos{
+    padding: 1.5rem;
+}
+
+.videos:hover{
+    transform: scale(1.2,1.2);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
+
+}
 
 /*estilos del parrafo*/
 
@@ -78,28 +93,13 @@ p {
 
 /*tipo de fuente y color de los subtitulos*/
 h2 {
-    font-family: 'Space Mono', monospace;
-    color: nth($colores,13);
-    padding: 1.5vh 4vh;
-
-}
-h2:hover{
-    color:nth($colores,12);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: linear
+    font-family: nth($fuentes,1);
+    color:nth($colores,15);
+    padding: 1.2vh 4vh;
+    text-decoration: underline nth($colores,13)
 }
 
-/*tamaño de fuente y tipo del titulo principal*/
-.titulo-principal {
-    font-family:nth($fuentes,1);
-    color: nth($colores,13);
-    font-size: nth($font-size, 1);
-    padding-right: 1em;
-}
-
-
-/* orden de los subtitulos y estilos*/
+/*orden de los subtitulos y estilos*/
 .subtitulo-right {
     text-align: right;
 }
@@ -110,8 +110,10 @@ h2:hover{
     text-transform: none;
     padding-top: 15vh;
     padding-bottom: 2vh;
-    font-family: 'Space Mono', monospace;
+    font-family: nth($fuentes,1);
     text-align: center;
+    color:nth($colores,6);
+    
 }
 
 /* estilo para el texto de contacto*/
@@ -121,11 +123,33 @@ h2:hover{
     text-transform: none;
     text-align: center;
     font-size: nth($font-size, 3);
+    color:nth($colores,13);
 }
+
+
+/*tamaño de fuente y tipo del titulo principal*/
+h1 {
+    font-family:nth($fuentes,1);
+    color: nth($colores,13);
+    font-size: nth($font-size, 1);
+    padding-right: 1em;
+}
+
+/*separador entre los titulos*/
+hr{
+    border: none;
+    height: 5px;
+    color:nth($colores,13);
+    background-color:nth($colores,13);
+
+}
+
+
 
 /* estilos para imagenes contacto, ilustracion y decoracion(estrellas)*/
 .img-contacto {
-    @extend %imagenes
+    width: 10%;
+
 }
 
 .imagen-ilustracion {
@@ -138,6 +162,10 @@ h2:hover{
     height: 12vh;
 
 }
+.decoracion:hover{
+ transform: translate(10px, 20px);
+
+}
 
 /*estilo imagen corazones*/
 .corazon {
@@ -146,7 +174,27 @@ h2:hover{
 }
 
 
-/* estilos para la playlist de spotify*/
+/*estilos para los iconos de la seccion conocimientos*/
+
+.conocimientos-iconos{
+    width: 4%;
+}
+
+.conocimientos-iconos:hover{
+    transform: scale(1.5,1.5);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
+}
+
+.iconos{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+/* estilos para las playlist de spotify*/
 
 .playlist {
     border-radius: 30px;
@@ -169,7 +217,7 @@ a {
 }
 
 a:link {
-    color: nth($colores,12);
+    color: nth($colores,13);
 }
 
 a:visited {
@@ -211,4 +259,7 @@ a:hover {
     --bs-bg-opacity: 0.5;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
+
+
+
 

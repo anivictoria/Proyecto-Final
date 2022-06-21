@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.img-contacto, img {
-  width: 100%;
-}
-
 .imagen-ilustracion {
   width: 10;
   height: 20;
@@ -54,12 +50,28 @@ body {
   width: 100%;
 }
 
-.img-grid:hover {
-  transition-property: opacity, left, top, height;
-  transition-duration: 3s, 5s, 3s, 5s;
+img {
+  width: 100%;
 }
 
-/* fin de grid de las imagenes de la seccion trabajo*/
+.img-grid:hover {
+  opacity: 50%;
+  transition-duration: 1s, 1s, 1s, 1s;
+}
+
+/* fin de grid de las imagenes de la seccion trabajos*/
+/*estilos para los videos de youtube de la seccion trabajos*/
+.videos {
+  padding: 1.5rem;
+}
+
+.videos:hover {
+  transform: scale(1.2, 1.2);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
 /*estilos del parrafo*/
 p {
   font-family: "Nanum Pen Script", cursive;
@@ -76,27 +88,13 @@ p {
 
 /*tipo de fuente y color de los subtitulos*/
 h2 {
-  font-family: "Space Mono", monospace;
-  color: white;
-  padding: 1.5vh 4vh;
-}
-
-h2:hover {
-  color: black;
-  transition-property: all;
-  transition-duration: 0.6s;
-  transition-timing-function: linear;
-}
-
-/*tamaño de fuente y tipo del titulo principal*/
-.titulo-principal {
   font-family: "Space Mono";
-  color: white;
-  font-size: 1.5em;
-  padding-right: 1em;
+  color: #FDB1C6;
+  padding: 1.2vh 4vh;
+  text-decoration: underline white;
 }
 
-/* orden de los subtitulos y estilos*/
+/*orden de los subtitulos y estilos*/
 .subtitulo-right {
   text-align: right;
 }
@@ -107,8 +105,9 @@ h2:hover {
   text-transform: none;
   padding-top: 15vh;
   padding-bottom: 2vh;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono";
   text-align: center;
+  color: #A97895;
 }
 
 /* estilo para el texto de contacto*/
@@ -117,9 +116,30 @@ h2:hover {
   text-transform: none;
   text-align: center;
   font-size: 1em;
+  color: white;
+}
+
+/*tamaño de fuente y tipo del titulo principal*/
+h1 {
+  font-family: "Space Mono";
+  color: white;
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+/*separador entre los titulos*/
+hr {
+  border: none;
+  height: 5px;
+  color: white;
+  background-color: white;
 }
 
 /* estilos para imagenes contacto, ilustracion y decoracion(estrellas)*/
+.img-contacto {
+  width: 10%;
+}
+
 .imagen-ilustracion {
   width: 20%;
   height: 20%;
@@ -130,13 +150,34 @@ h2:hover {
   height: 12vh;
 }
 
+.decoracion:hover {
+  transform: translate(10px, 20px);
+}
+
 /*estilo imagen corazones*/
 .corazon {
   width: 10vh;
   height: 8vh;
 }
 
-/* estilos para la playlist de spotify*/
+/*estilos para los iconos de la seccion conocimientos*/
+.conocimientos-iconos {
+  width: 4%;
+}
+
+.conocimientos-iconos:hover {
+  transform: scale(1.5, 1.5);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.iconos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* estilos para las playlist de spotify*/
 .playlist {
   border-radius: 30px;
   width: 100%;
@@ -154,7 +195,7 @@ a {
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 
 a:visited {
