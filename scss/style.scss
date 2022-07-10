@@ -1,5 +1,9 @@
 @import"listas";
 @import "mixins";
+@import "extends";
+@import "pages/header";
+@import "pages/footer";
+
 
 * {
     margin: 0;
@@ -68,15 +72,6 @@ body {
 .videos {
     padding: 1.5rem;
 }
-
-.videos:hover {
-    transform: scale(1.2, 1.2);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear
-}
-
-
 
 /*estilos del parrafo*/
 
@@ -159,35 +154,16 @@ hr {
     height: 20%;
 }
 
-.decoracion {
-    width: 10vh;
-    height: 12vh;
-
-}
 
 .decoracion:hover {
     transform: translate(10px, 20px);
 
 }
 
-/*estilo imagen corazones*/
-.corazon {
-    width: 10vh;
-    height: 8vh;
-}
-
-
 /*estilos para los iconos de la seccion conocimientos*/
 
 .conocimientos-iconos {
     width: 4%;
-}
-
-.conocimientos-iconos:hover {
-    transform: scale(1.5, 1.5);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear
 }
 
 .iconos {
@@ -201,68 +177,4 @@ hr {
 .playlist {
     border-radius: 30px;
     width: 100%;
-}
-.playlist:hover{
-    transform: scale(1.1, 1.1);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear
-}
-
-
-/*estilos del navbar y a (contacto tambien)*/
-
-li {
-    font-family: nth($fuentes, 1);
-    list-style: none;
-    padding: 1vh 1vh;
-
-}
-
-a {
-    text-decoration: none;
-
-}
-
-a:link {
-    color: nth($colores, 13);
-}
-
-a:visited {
-    color: nth($colores, 13);
-}
-
-a:hover {
-    border-bottom: 1px solid;
-    background: nth($colores, 5);
-    color: nth($colores, 9);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-.fondo-nav {
-    background-color: nth($colores, 3);
-
-}
-
-.fondo-nav:hover {
-    background-color: nth($colores, 3);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear
-}
-
-
-.navegador {
-    --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-color: var(--bs-navbar-color);
-    --bs-nav-link-hover-color: nth($colores, 11);
-    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-}
-
-.navegador {
-    --bs-bg-opacity: 0.5;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }

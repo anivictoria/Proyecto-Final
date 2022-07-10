@@ -1,0 +1,28 @@
+li {
+    font-family: nth($fuentes, 1);
+    list-style: none;
+    padding: 1vh 1vh;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:link {
+    color: nth($colores, 13);
+}
+
+a:visited {
+    color: nth($colores, 13);
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: nth($colores, 5);
+    color: nth($colores, 9);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}

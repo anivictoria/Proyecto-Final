@@ -1,0 +1,35 @@
+%imagenesextend {
+    width: 7%;
+    height: 10%;
+    ;
+
+
+}
+
+/*estilo imagen corazones y estrellas*/
+.corazon {
+    @extend%imagenesextend;
+}
+
+.decoracion {
+    @extend%imagenesextend;
+}
+
+%hover-zoom {
+    transform: scale(1.2, 1.2);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
+}
+
+.conocimientos-iconos:hover {
+    @extend%hover-zoom;
+}
+
+.playlist:hover {
+    @extend%hover-zoom;
+}
+
+.videos:hover {
+    @extend%hover-zoom;
+}

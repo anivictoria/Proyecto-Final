@@ -4,6 +4,70 @@
   height: 20;
 }
 
+.decoracion, .corazon {
+  width: 7%;
+  height: 10%;
+}
+
+/*estilo imagen corazones y estrellas*/
+.videos:hover, .playlist:hover, .conocimientos-iconos:hover {
+  transform: scale(1.2, 1.2);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.fondo-nav {
+  background-color: #A73F52;
+}
+
+.fondo-nav:hover {
+  background-color: #A73F52;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.navegador {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: nth($colores, 11);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+}
+
+.navegador {
+  --bs-bg-opacity: 0.5;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+li {
+  font-family: "Space Mono";
+  list-style: none;
+  padding: 1vh 1vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #945B72;
+  color: #725185;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,13 +120,6 @@ body {
 /*estilos para los videos de youtube de la seccion trabajos*/
 .videos {
   padding: 1.5rem;
-}
-
-.videos:hover {
-  transform: scale(1.2, 1.2);
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
 }
 
 /*estilos del parrafo*/
@@ -138,31 +195,13 @@ hr {
   height: 20%;
 }
 
-.decoracion {
-  width: 10vh;
-  height: 12vh;
-}
-
 .decoracion:hover {
   transform: translate(10px, 20px);
-}
-
-/*estilo imagen corazones*/
-.corazon {
-  width: 10vh;
-  height: 8vh;
 }
 
 /*estilos para los iconos de la seccion conocimientos*/
 .conocimientos-iconos {
   width: 4%;
-}
-
-.conocimientos-iconos:hover {
-  transform: scale(1.5, 1.5);
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
 }
 
 .iconos {
@@ -174,65 +213,6 @@ hr {
 .playlist {
   border-radius: 30px;
   width: 100%;
-}
-
-.playlist:hover {
-  transform: scale(1.1, 1.1);
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-/*estilos del navbar y a (contacto tambien)*/
-li {
-  font-family: "Space Mono";
-  list-style: none;
-  padding: 1vh 1vh;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: white;
-}
-
-a:visited {
-  color: white;
-}
-
-a:hover {
-  border-bottom: 1px solid;
-  background: #945B72;
-  color: #725185;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.fondo-nav {
-  background-color: #A73F52;
-}
-
-.fondo-nav:hover {
-  background-color: #A73F52;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.navegador {
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: nth($colores, 11);
-  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-}
-
-.navegador {
-  --bs-bg-opacity: 0.5;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

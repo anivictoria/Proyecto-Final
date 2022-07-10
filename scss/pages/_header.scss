@@ -1,0 +1,25 @@
+.fondo-nav {
+    background-color: nth($colores, 3);
+
+}
+
+.fondo-nav:hover {
+    background-color: nth($colores, 3);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
+}
+
+
+.navegador {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: nth($colores, 11);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+}
+
+.navegador {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
