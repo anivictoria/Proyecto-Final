@@ -176,6 +176,13 @@ hr {
   width: 100%;
 }
 
+.playlist:hover {
+  transform: scale(1.1, 1.1);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
 /*estilos del navbar y a (contacto tambien)*/
 li {
   font-family: "Space Mono";
